@@ -25,11 +25,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 @RequestMapping("/cliente")
-public class ClienteController {
+public class ClientesController {
     @Autowired
     ClienteServicio servicio;
 
-    @GetMapping("/todos")
+    @GetMapping("/vertodos")
     public List<ClientesDTO> verTodos() {
         return servicio.buscarTodos().stream().map(ClienteMapper::toDto).collect(Collectors.toList());
     }
