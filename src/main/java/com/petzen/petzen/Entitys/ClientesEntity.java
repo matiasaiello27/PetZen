@@ -10,29 +10,32 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table (name = "clientes")
-@Getter 
-@Setter 
-@NoArgsConstructor 
-@AllArgsConstructor 
+@Table(name = "clientes")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ClientesEntity {
     @Id
-    @Column (name = "dni", length = 9) 
+    @Column(name = "dni", length = 9)
     private String dni;
 
-    @Column (name = "nombre")
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column (name = "apellido1")
+    @Column(name = "apellido1")
     private String apellido1;
 
-    @Column (name = "apellido2")
+    @Column(name = "apellido2")
     private String apellido2;
 
-    @Column (name = "direccion")
+    @Column(name = "direccion")
     private String direccion;
 
-    @Column (name = "email")
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "telefono")
+    private String telefono;
 
 }

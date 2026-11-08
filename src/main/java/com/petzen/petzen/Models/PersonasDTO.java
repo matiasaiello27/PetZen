@@ -1,18 +1,24 @@
 package com.petzen.petzen.Models;
 
-public class PersonaDTO {
+public class PersonasDTO {
     private String dni;
     private String nombre;
     private String apellido1;
     private String apellido2;
     private String email;
+    private String telefono;
 
-    public PersonaDTO(String dni, String nombre, String apellido1, String apellido2, String email) {
+    public PersonasDTO() {
+
+    }
+
+    public PersonasDTO(String dni, String nombre, String apellido1, String apellido2, String email, String telefono) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
         this.email = email;
+        this.telefono = telefono;
     }
 
     public String getDni() {
@@ -53,6 +59,14 @@ public class PersonaDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
 }

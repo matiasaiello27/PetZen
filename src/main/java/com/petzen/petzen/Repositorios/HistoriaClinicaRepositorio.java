@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.petzen.petzen.Entitys.HistoriaClinicaEntity;
-import com.petzen.petzen.Entitys.MascotaEntity;
+import com.petzen.petzen.Entitys.HistoriasClinicasEntity;
+import com.petzen.petzen.Entitys.MascotasEntity;
 
-public interface HistoriaClinicaRepositorio extends JpaRepository<HistoriaClinicaEntity, Long>{
+public interface HistoriaClinicaRepositorio extends JpaRepository<HistoriasClinicasEntity, Long>{
     
 }

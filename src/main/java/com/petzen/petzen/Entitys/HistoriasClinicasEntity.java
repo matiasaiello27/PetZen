@@ -11,27 +11,28 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "historia_clinica")
-public class HistoriaClinicaEntity {
+public class HistoriasClinicasEntity {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column (name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
-    @Column (name = "fecha_hora")
+    @Column(name = "fecha_hora")
     private LocalDateTime fecha_hora;
 
-    @Column (name = "temperatura")
+    @Column(name = "temperatura")
     private Double temperatura;
 
-    @Column (name = "peso")
+    @Column(name = "peso")
     private Double peso;
 
-    @Column (name = "sintomas")
+    @Column(name = "sintomas")
     private String sintomas;
 
-    @Column (name = "diagnostico")
+    @Column(name = "diagnostico")
     private String diagnostico;
 
-    @Column (name = "tratamiento")
+    @Column(name = "tratamiento")
     private String tratamiento;
+
 }
